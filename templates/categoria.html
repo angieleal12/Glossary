@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2 style="text-align: center;">Domains: {{ nombre.replace("_", " ").title() }}</h2>
+
+<main class="contenedor-tarjetas">
+    {% for item in terminologias %}
+    <div class="tarjeta">
+        <img src="{{ url_for('static', filename='imagenes/' + item['image']) }}" alt="Imagen de {{ item['title'] }}">
+        <h2>{{ item['title'] }}</h2>
+        <p>{{ item['definition'] }}</p>
+        <button onclick="mostrarEjemplo(this)">example</button>
+        <div class="ejemplo">
+            <p>{{ item['example'] }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</main>
+
+<script>
+    function mostrarEjemplo(boton) {
+        const ejemplo = boton.nextElementSibling;
+        ejemplo.classList.toggle("activo");
+    }
+</script>
+{% endblock %}

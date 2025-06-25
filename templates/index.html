@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+{% block contenido %}
+<h2 style="text-align: center; margin-top: 30px; font-size: 2rem; color: #203a43;">🚀 Start exploring a theme</h2>
+
+<div class="contenedor-categorias">
+    <a href="{{ url_for('categoria_en', name='programming') }}" class="categoria-card">
+        <h3>💻 Programming</h3>
+        <p>Key concepts of software development and code.</p>
+    </a>
+    <a href="{{ url_for('categoria_en', name='artificial_intelligence') }}" class="categoria-card">
+        <h3>🤖 Artificial intelligence</h3>
+        <p>Algorithms that learn, reason, and make decisions.</p>
+    </a>
+    <a href="{{ url_for('categoria_en', name='data_analysis') }}" class="categoria-card">
+        <h3>📊 Data Analysis</h3>
+        <p>Transform data into useful knowledge.</p>
+    </a>
+    <a href="{{ url_for('categoria_en', name='cloud_computing') }}" class="categoria-card">
+        <h3>☁️ Cloud Computing</h3>
+        <p>Internet-accessible services and storage.</p>
+    </a>
+</div>
+
+
+<p class="typing" id="texto-animado" style="font-size: 1.1em; font-style: italic; color: #ffffff;"></p>
+
+<script>
+    window.onload = function () {
+        const texto = "Explore the most important technology terms in a simple and interactive way.";
+        let i = 0;
+        function escribir() {
+            if (i < texto.length) {
+                document.getElementById("texto-animado").innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(escribir, 40);
+            }
+        }
+        escribir();
+    };
+</script>
+
+
+<footer>
+    <p>Created by Angie Leal and Laura Gomez</p>
+</footer>
+
+
+{% endblock %}

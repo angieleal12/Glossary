@@ -1,0 +1,299 @@
+ /* --- ESTILOS GENERALES --- */
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: radial-gradient(circle at 20% 20%, #0f2027, #203a43, #2c5364);
+     background-size: 100% 100%;
+     overflow-x: hidden;
+     color: white;
+     position: relative;
+ }
+
+ /* --- ENCABEZADO Y MENÚ --- */
+ header {
+     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+     padding: 10px 0;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+     position: sticky;
+     top: 0;
+     z-index: 999;
+ }
+
+ .menu {
+     max-width: 1100px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+ }
+
+ .menu h1.titulo-sitio {
+     margin: 5px 0;
+     font-size: 1.8em;
+     color: #00ffff;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .menu ul {
+     list-style: none;
+     display: flex;
+     gap: 15px;
+     padding: 0;
+     margin: 10px 0;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .menu ul li a {
+     text-decoration: none;
+     color: #ffffff;
+     background-color: #1c1f26;
+     padding: 8px 16px;
+     border-radius: 8px;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+     font-weight: bold;
+     font-size: 1em;
+ }
+
+ .menu ul li a:hover {
+     background-color: #00c3ff;
+     color: #000;
+     transform: scale(1.05);
+ }
+
+ /* --- CONTENEDOR DE TARJETAS --- */
+
+
+ /* --- TARJETA INDIVIDUAL --- */
+ .tarjeta {
+     background: #ffffff;
+     border-radius: 12px;
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 15px;
+ }
+
+ .tarjeta:hover {
+     transform: translateY(-8px);
+ }
+
+ .tarjeta img {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+     border-radius: 8px;
+ }
+
+ /* --- TEXTO DE LA TARJETA --- */
+ .tarjeta h2 {
+     font-size: 1.3em;
+     color: #2c5364;
+     margin: 10px 0 5px;
+     text-align: center;
+ }
+
+ .tarjeta p {
+     text-align: center;
+     font-size: 0.95em;
+     margin-bottom: 10px;
+     color: #1a1a1a;
+ }
+
+
+
+ /* --- BOTÓN DE VER EJEMPLO --- */
+ .tarjeta button {
+     background: linear-gradient(135deg, #6a11cb, #2575fc);
+     /* Morado suave a azul */
+     color: #ffffff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 25px;
+     cursor: pointer;
+     font-size: 0.95em;
+     font-weight: bold;
+     box-shadow: 0 3px 10px rgba(98, 0, 234, 0.2);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     margin-top: auto;
+ }
+
+ .tarjeta button:hover {
+     transform: scale(1.05);
+     box-shadow: 0 6px 20px rgba(98, 0, 234, 0.4);
+     background: linear-gradient(135deg, #7f32fc, #337dfb);
+ }
+
+
+
+
+ /* --- CONTENEDOR DE EJEMPLO OCULTO --- */
+ .ejemplo {
+     margin-top: 10px;
+     background-color: #eef3f8;
+     padding: 8px;
+     border-radius: 6px;
+     display: none;
+     width: 100%;
+     text-align: center;
+     font-size: 0.9em;
+     color: #000;
+ }
+
+ .ejemplo.activo {
+     display: block;
+ }
+
+ /* --- RESPONSIVO PARA CELULAR --- */
+ @media (max-width: 600px) {
+     .menu h1.titulo-sitio {
+         font-size: 1.3em;
+     }
+
+     .menu ul {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .tarjeta {
+         padding: 10px;
+     }
+
+
+     .tarjeta img {
+         width: 100%;
+         height: 180px;
+         object-fit: cover;
+         border-radius: 8px;
+         transition: transform 0.3s ease;
+     }
+
+     .tarjeta:hover img {
+         transform: scale(1.03);
+     }
+
+
+ }
+
+ /* --- NUEVO CONTENEDOR DE TARJETAS --- */
+ .contenedor-tarjetas {
+     max-width: 1200px;
+     margin: auto;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 20px;
+     box-sizing: border-box;
+ }
+
+ #fondo-nodos {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+ }
+
+ .contenedor-categorias {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 20px;
+     max-width: 1000px;
+     margin: 40px auto;
+     padding: 0 20px;
+ }
+
+ .categoria-card {
+     background: linear-gradient(135deg, #1e3c72, #2a5298);
+     color: white;
+     text-decoration: none;
+     padding: 30px 20px;
+     text-align: center;
+     border-radius: 15px;
+     font-size: 1.2em;
+     font-weight: bold;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .categoria-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+     background: linear-gradient(135deg, #2566c2, #3c9fd6);
+ }
+
+ .categoria-card {
+     opacity: 0;
+     transform: translateY(20px);
+     animation: aparecer 0.6s ease forwards;
+ }
+
+ .categoria-card:nth-child(1) {
+     animation-delay: 0.1s;
+ }
+
+ .categoria-card:nth-child(2) {
+     animation-delay: 0.2s;
+ }
+
+ .categoria-card:nth-child(3) {
+     animation-delay: 0.3s;
+ }
+
+ .categoria-card:nth-child(4) {
+     animation-delay: 0.4s;
+ }
+
+ @keyframes aparecer {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ body::before {
+     content: "";
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.2);
+     z-index: -2;
+     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
+ }
+
+ .titulo-sitio a {
+     color: #00ffff;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .titulo-sitio a:hover {
+     color: #ffffff;
+ }
+
+ footer {
+     text-align: center;
+     padding: 20px;
+     background-color: #0f2027;
+     color: white;
+     font-size: 0.9em;
+     margin-top: 50px;
+ }
+
+ .typing {
+     font-family: 'Orbitron', sans-serif;
+     text-align: center;
+     margin-top: 30px;
+     color: #00ffff;
+     font-size: 1.2em;
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     line-height: 1.6;
+ }

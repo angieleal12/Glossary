@@ -1,0 +1,250 @@
+{
+    "programming": [
+        {
+            "title": "Object-Oriented Programming",
+            "definition": "A programming model that organizes code into objects with properties and methods.",
+            "example": "In Python, a class is an example of object-oriented programming.",
+            "image": "poo.jpg"
+        },
+        {
+            "title": "Algorithms",
+            "definition": "A set of ordered steps that solve a problem.",
+            "example": "An algorithm to sort a list of numbers.",
+            "image": "algoritmo.jpg"
+        },
+        {
+            "title": "Function",
+            "definition": "A block of code that performs a specific task and can be reused.",
+            "example": "A function in Python that adds two numbers: def suma(a, b): return a + b",
+            "image": "funcion.jpg"
+        },
+        {
+            "title": "Compilers",
+            "definition": "Programs that translate source code into machine-readable language.",
+            "example": "GCC is a compiler for the C programming language.",
+            "image": "compilador.png"
+        },
+        {
+            "title": "Testing",
+            "definition": "The process of verifying that a program works correctly.",
+            "example": "Writing unit tests in Python using unittest.",
+            "image": "testing.png"
+        },
+        {
+            "title": "Variables",
+            "definition": "Containers for storing data to be used during program execution.",
+            "example": "In Python: name = 'Ana'",
+            "image": "variables.png"
+        },
+        {
+            "title": "Design Patterns",
+            "definition": "Reusable solutions to common problems in software development.",
+            "example": "The Singleton pattern ensures only one instance of a class exists.",
+            "image": "patrones.png"
+        },
+        {
+            "title": "Logic",
+            "definition": "A set of rules used to make decisions in code.",
+            "example": "Using conditionals like if/else in programming.",
+            "image": "logica.png"
+        },
+        {
+            "title": "Frameworks",
+            "definition": "Sets of tools that facilitate software development.",
+            "example": "Django is a framework for building web applications in Python.",
+            "image": "frameworks.png"
+        },
+        {
+            "title": "Version Control",
+            "definition": "A system that tracks changes to source code over time.",
+            "example": "Git allows code version management and team collaboration.",
+            "image": "git.png"
+        }
+    ],
+    "data_analysis": [
+        {
+            "title": "Structured Data",
+            "definition": "Data organized in tables with rows and columns, like in a spreadsheet.",
+            "example": "An SQL database contains structured data.",
+            "image": "datos_estructurados.png"
+        },
+        {
+            "title": "Unstructured Data",
+            "definition": "Data without a fixed format, such as free text, images, or videos.",
+            "example": "A collection of emails is an example of unstructured data.",
+            "image": "datos_no_estructurados.png"
+        },
+        {
+            "title": "Data Cleaning",
+            "definition": "The process of correcting or removing incorrect or duplicate data.",
+            "example": "Removing empty values or typos from an Excel table.",
+            "image": "limpieza_datos.png"
+        },
+        {
+            "title": "Predictive Models",
+            "definition": "Statistical models that predict future outcomes based on historical data.",
+            "example": "A model that predicts whether a customer will make a purchase.",
+            "image": "modelo_predictivo.png"
+        },
+        {
+            "title": "Transformation",
+            "definition": "Changing the format or structure of data to improve analysis.",
+            "example": "Converting date text into a standard format.",
+            "image": "transformacion.png"
+        },
+        {
+            "title": "Data Visualization",
+            "definition": "Representing data using charts to make it easier to understand.",
+            "example": "A bar chart showing monthly sales.",
+            "image": "visualizacion.png"
+        },
+        {
+            "title": "Big Data",
+            "definition": "Large and complex datasets that require new technologies for analysis.",
+            "example": "Real-time analysis of social media data.",
+            "image": "bigdata.png"
+        },
+        {
+            "title": "Database",
+            "definition": "A system for efficiently storing, organizing, and accessing data.",
+            "example": "MySQL, PostgreSQL, and MongoDB are examples of databases.",
+            "image": "base_datos.png"
+        },
+        {
+            "title": "Data Warehouse",
+            "definition": "A system that stores large amounts of historical data for analysis.",
+            "example": "Used by companies to generate reports from different departments.",
+            "image": "data_warehouse.png"
+        },
+        {
+            "title": "Data",
+            "definition": "Raw information that has not yet been processed or interpreted.",
+            "example": "A CSV file with names and ages is a data set.",
+            "image": "datos.png"
+        }
+    ],
+    "artificial_intelligence": [
+        {
+            "title": "Machine Learning",
+            "definition": "A technique that allows computers to learn from data.",
+            "example": "A system that learns to recognize cat images.",
+            "image": "machine_learning.png"
+        },
+        {
+            "title": "Artificial Neural Networks",
+            "definition": "Models inspired by the human brain that recognize complex patterns.",
+            "example": "Networks used for facial recognition in photos.",
+            "image": "red_neuronal.png"
+        },
+        {
+            "title": "Genetic Algorithms",
+            "definition": "An optimization method inspired by natural evolution.",
+            "example": "Solving mazes using natural selection and mutation.",
+            "image": "algoritmo_genetico.png"
+        },
+        {
+            "title": "Intelligent Agents",
+            "definition": "Programs that perceive their environment and make decisions to achieve goals.",
+            "example": "A robot that follows a black line on the floor.",
+            "image": "agente_inteligente.png"
+        },
+        {
+            "title": "Large Language Models",
+            "definition": "AI models trained on large amounts of text to generate natural language.",
+            "example": "ChatGPT is an example of an LLM.",
+            "image": "llm.png"
+        },
+        {
+            "title": "AI Bias",
+            "definition": "When AI models produce unfair results due to biased training data.",
+            "example": "A hiring system that favors a specific gender.",
+            "image": "sesgo.png"
+        },
+        {
+            "title": "Anomaly Detection",
+            "definition": "Identifying unusual or unexpected patterns in data.",
+            "example": "Detecting credit card fraud.",
+            "image": "anomalias.png"
+        },
+        {
+            "title": "Tokenization",
+            "definition": "Splitting text into small parts called tokens for analysis.",
+            "example": "Breaking a sentence into individual words.",
+            "image": "tokenizacion.png"
+        },
+        {
+            "title": "Deepfakes",
+            "definition": "AI-generated fake videos that appear to be real.",
+            "example": "A video showing someone saying something they never actually said.",
+            "image": "deepfake.png"
+        },
+        {
+            "title": "Robotics",
+            "definition": "A field of technology that designs and builds robots.",
+            "example": "A robotic arm that assembles parts in a factory.",
+            "image": "robotica.png"
+        }
+    ],
+    "cloud_computing": [
+        {
+            "title": "Infrastructure as a Service (IaaS)",
+            "definition": "Provision of computing resources such as servers and networks over the internet.",
+            "example": "Amazon EC2 allows renting virtual servers.",
+            "image": "iaas.png"
+        },
+        {
+            "title": "Platform as a Service (PaaS)",
+            "definition": "A complete environment for developing applications without managing the infrastructure.",
+            "example": "Google App Engine lets you build apps without worrying about servers.",
+            "image": "paas.png"
+        },
+        {
+            "title": "Private Cloud",
+            "definition": "Cloud infrastructure used exclusively by one organization.",
+            "example": "A university uses its own cloud to store academic data.",
+            "image": "nube_privada.png"
+        },
+        {
+            "title": "Public Cloud",
+            "definition": "Cloud services provided by third-party vendors to the general public.",
+            "example": "Google Cloud, AWS, or Microsoft Azure.",
+            "image": "nube_publica.png"
+        },
+        {
+            "title": "Virtualization",
+            "definition": "Creating virtual versions of physical resources like servers or operating systems.",
+            "example": "Running multiple operating systems on a single physical machine.",
+            "image": "virtualizacion.png"
+        },
+        {
+            "title": "Containers",
+            "definition": "Technology that packages applications and their dependencies into a single unit.",
+            "example": "Docker allows creating containers to run apps anywhere.",
+            "image": "contenedor.png"
+        },
+        {
+            "title": "Cloud Storage",
+            "definition": "Storing files and data on the internet instead of a local computer.",
+            "example": "Google Drive or Dropbox.",
+            "image": "almacenamiento_nube.png"
+        },
+        {
+            "title": "Microservices",
+            "definition": "An architecture where applications are divided into small, independent services.",
+            "example": "Each part of an online store functions as a separate service.",
+            "image": "microservicios.png"
+        },
+        {
+            "title": "Bandwidth",
+            "definition": "The amount of data that can be transferred within a given time.",
+            "example": "A higher bandwidth connection loads videos faster.",
+            "image": "ancho_banda.png"
+        },
+        {
+            "title": "Data Center and CPU",
+            "definition": "Physical facilities that house servers and processors for cloud services.",
+            "example": "Amazon has data centers worldwide to provide its services.",
+            "image": "datacenter_cpu.png"
+        }
+    ]
+}

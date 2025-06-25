@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terminología</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <canvas id="fondo-nodos"></canvas>
+    <header>
+        <nav class="menu">
+            <h1 class="titulo-sitio"><a href="{{ url_for('index') }}">GLOSSARY PROJECT</a></h1>
+
+            {% if not es_index %}
+            <ul>
+                <li><a href="{{ url_for('categoria_en', name='programming') }}">Programming</a></li>
+                <li><a href="{{ url_for('categoria_en', name='artificial_intelligence') }}">Artificial Intelligence
+                        (AI)</a></li>
+                <li><a href="{{ url_for('categoria_en', name='data_analysis') }}">Data Analysis</a></li>
+                <li><a href="{{ url_for('categoria_en', name='cloud_computing') }}">Cloud Computing</a></li>
+            </ul>
+            {% endif %}
+
+
+        </nav>
+    </header>
+    <main>
+        {% block contenido %}{% endblock %}
+    </main>
+    <script>
+        const canvas = document.getElementById('fondo-nodos');
+        const ctx = canvas.getContext('2d');
+
+        let puntos = [];
+
+        function ajustarCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            puntos = [];
+            for (let i = 0; i < 60; i++) {
+                puntos.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 1.5,
+                    vy: (Math.random() - 0.5) * 1.5
+                });
+            }
+        }
+
+        function animar() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < puntos.length; i++) {
+                let p = puntos[i];
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                ctx.fillStyle = "rgba(0, 255, 255, 0.5)";
+                ctx.fill();
+
+                for (let j = i + 1; j < puntos.length; j++) {
+                    let p2 = puntos[j];
+                    let dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = "rgba(0, 255, 255, 0.1)";
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animar);
+        }
+
+        window.addEventListener("resize", ajustarCanvas);
+
+        ajustarCanvas();
+        animar();
+    </script>
+
+
+</body>
+
+</html>
