@@ -22,43 +22,43 @@
             "title": "Compilers",
             "definition": "Programs that translate source code into machine-readable language.",
             "example": "GCC is a compiler for the C programming language.",
-            "image": "compilador.png"
+            "image": "compilador.jpg"
         },
         {
             "title": "Testing",
             "definition": "The process of verifying that a program works correctly.",
             "example": "Writing unit tests in Python using unittest.",
-            "image": "testing.png"
+            "image": "testing.jpeg"
         },
         {
             "title": "Variables",
             "definition": "Containers for storing data to be used during program execution.",
             "example": "In Python: name = 'Ana'",
-            "image": "variables.png"
+            "image": "variable.jpeg"
         },
         {
             "title": "Design Patterns",
             "definition": "Reusable solutions to common problems in software development.",
             "example": "The Singleton pattern ensures only one instance of a class exists.",
-            "image": "patrones.png"
+            "image": "patronesDiseño.jpeg"
         },
         {
             "title": "Logic",
             "definition": "A set of rules used to make decisions in code.",
             "example": "Using conditionals like if/else in programming.",
-            "image": "logica.png"
+            "image": "logica.jpeg"
         },
         {
             "title": "Frameworks",
             "definition": "Sets of tools that facilitate software development.",
             "example": "Django is a framework for building web applications in Python.",
-            "image": "frameworks.png"
+            "image": "framework.jpeg"
         },
         {
             "title": "Version Control",
             "definition": "A system that tracks changes to source code over time.",
             "example": "Git allows code version management and team collaboration.",
-            "image": "git.png"
+            "image": "controlversiones.jpeg"
         }
     ],
     "data_analysis": [
@@ -66,37 +66,37 @@
             "title": "Structured Data",
             "definition": "Data organized in tables with rows and columns, like in a spreadsheet.",
             "example": "An SQL database contains structured data.",
-            "image": "datos_estructurados.png"
+            "image": "StructuredData.jpeg"
         },
         {
             "title": "Unstructured Data",
             "definition": "Data without a fixed format, such as free text, images, or videos.",
             "example": "A collection of emails is an example of unstructured data.",
-            "image": "datos_no_estructurados.png"
+            "image": "UnstructuredData.jpeg"
         },
         {
             "title": "Data Cleaning",
             "definition": "The process of correcting or removing incorrect or duplicate data.",
             "example": "Removing empty values or typos from an Excel table.",
-            "image": "limpieza_datos.png"
+            "image": "DataCleaning.jpeg"
         },
         {
             "title": "Predictive Models",
             "definition": "Statistical models that predict future outcomes based on historical data.",
             "example": "A model that predicts whether a customer will make a purchase.",
-            "image": "modelo_predictivo.png"
+            "image": "PredictiveModels.jpeg"
         },
         {
             "title": "Transformation",
             "definition": "Changing the format or structure of data to improve analysis.",
             "example": "Converting date text into a standard format.",
-            "image": "transformacion.png"
+            "image": "Data Transformation.jpeg"
         },
         {
             "title": "Data Visualization",
             "definition": "Representing data using charts to make it easier to understand.",
             "example": "A bar chart showing monthly sales.",
-            "image": "visualizacion.png"
+            "image": "Visualización de Datos.jpeg"
         },
         {
             "title": "Big Data",
