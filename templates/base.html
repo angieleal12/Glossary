@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <title>Terminología</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <canvas id="fondo-nodos"></canvas>
+
     <header>
         <nav class="menu">
             <h1 class="titulo-sitio"><a href="{{ url_for('index') }}">GLOSSARY PROJECT</a></h1>
 
             {% if not es_index %}
-            <ul>
+            <!-- Botón hamburguesa -->
+            <button class="hamburguesa" onclick="toggleMenu()">☰</button>
+
+            <!-- Menú desplegable -->
+            <ul class="menu-opciones" id="menuOpciones">
                 <li><a href="{{ url_for('categoria_en', name='programming') }}">Programming</a></li>
                 <li><a href="{{ url_for('categoria_en', name='artificial_intelligence') }}">Artificial Intelligence
                         (AI)</a></li>
@@ -22,13 +28,15 @@
                 <li><a href="{{ url_for('categoria_en', name='cloud_computing') }}">Cloud Computing</a></li>
             </ul>
             {% endif %}
-
-
         </nav>
     </header>
+
+
     <main>
         {% block contenido %}{% endblock %}
     </main>
+
+    <!-- Fondo animado -->
     <script>
         const canvas = document.getElementById('fondo-nodos');
         const ctx = canvas.getContext('2d');
@@ -80,11 +88,17 @@
         }
 
         window.addEventListener("resize", ajustarCanvas);
-
         ajustarCanvas();
         animar();
-    </script>
 
+
+    </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuOpciones");
+            menu.classList.toggle("activo");
+        }
+    </script>
 
 </body>
 
