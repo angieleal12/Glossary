@@ -22,7 +22,7 @@
             "title": "Compilers",
             "definition": "Programs that translate source code into machine-readable language.",
             "example": "GCC is a compiler for the C programming language.",
-            "image": "compilador.jpg"
+            "image": "compiladores.jpg"
         },
         {
             "title": "Testing",
@@ -102,25 +102,25 @@
             "title": "Big Data",
             "definition": "Large and complex datasets that require new technologies for analysis.",
             "example": "Real-time analysis of social media data.",
-            "image": "bigdata.png"
+            "image": "big data.jpeg"
         },
         {
             "title": "Database",
             "definition": "A system for efficiently storing, organizing, and accessing data.",
             "example": "MySQL, PostgreSQL, and MongoDB are examples of databases.",
-            "image": "base_datos.png"
+            "image": "database.jpeg"
         },
         {
             "title": "Data Warehouse",
             "definition": "A system that stores large amounts of historical data for analysis.",
             "example": "Used by companies to generate reports from different departments.",
-            "image": "data_warehouse.png"
+            "image": "Data Warehouse.jpeg"
         },
         {
             "title": "Data",
             "definition": "Raw information that has not yet been processed or interpreted.",
             "example": "A CSV file with names and ages is a data set.",
-            "image": "datos.png"
+            "image": "Data.jpeg"
         }
     ],
     "artificial_intelligence": [
@@ -128,61 +128,61 @@
             "title": "Machine Learning",
             "definition": "A technique that allows computers to learn from data.",
             "example": "A system that learns to recognize cat images.",
-            "image": "machine_learning.png"
+            "image": "machine learning.jpg"
         },
         {
             "title": "Artificial Neural Networks",
             "definition": "Models inspired by the human brain that recognize complex patterns.",
             "example": "Networks used for facial recognition in photos.",
-            "image": "red_neuronal.png"
+            "image": "Artificial Neural Networks.jpg"
         },
         {
             "title": "Genetic Algorithms",
             "definition": "An optimization method inspired by natural evolution.",
             "example": "Solving mazes using natural selection and mutation.",
-            "image": "algoritmo_genetico.png"
+            "image": "Genetic Algorithms.jpg"
         },
         {
             "title": "Intelligent Agents",
             "definition": "Programs that perceive their environment and make decisions to achieve goals.",
             "example": "A robot that follows a black line on the floor.",
-            "image": "agente_inteligente.png"
+            "image": "Intelligent Agents.jpg"
         },
         {
             "title": "Large Language Models",
             "definition": "AI models trained on large amounts of text to generate natural language.",
             "example": "ChatGPT is an example of an LLM.",
-            "image": "llm.png"
+            "image": "Large Language Models.jpeg"
         },
         {
             "title": "AI Bias",
             "definition": "When AI models produce unfair results due to biased training data.",
             "example": "A hiring system that favors a specific gender.",
-            "image": "sesgo.png"
+            "image": "AI Bias.jpeg"
         },
         {
             "title": "Anomaly Detection",
             "definition": "Identifying unusual or unexpected patterns in data.",
             "example": "Detecting credit card fraud.",
-            "image": "anomalias.png"
+            "image": "Anomaly Detection.jpeg"
         },
         {
             "title": "Tokenization",
             "definition": "Splitting text into small parts called tokens for analysis.",
             "example": "Breaking a sentence into individual words.",
-            "image": "tokenizacion.png"
+            "image": "Tokenization.jpeg"
         },
         {
             "title": "Deepfakes",
             "definition": "AI-generated fake videos that appear to be real.",
             "example": "A video showing someone saying something they never actually said.",
-            "image": "deepfake.png"
+            "image": "Deepfakes.jpeg"
         },
         {
             "title": "Robotics",
             "definition": "A field of technology that designs and builds robots.",
             "example": "A robotic arm that assembles parts in a factory.",
-            "image": "robotica.png"
+            "image": "Robotics.jpeg"
         }
     ],
     "cloud_computing": [
@@ -190,43 +190,43 @@
             "title": "Infrastructure as a Service (IaaS)",
             "definition": "Provision of computing resources such as servers and networks over the internet.",
             "example": "Amazon EC2 allows renting virtual servers.",
-            "image": "iaas.png"
+            "image": "Infrastructure a(IaaS).jpeg"
         },
         {
             "title": "Platform as a Service (PaaS)",
             "definition": "A complete environment for developing applications without managing the infrastructure.",
             "example": "Google App Engine lets you build apps without worrying about servers.",
-            "image": "paas.png"
+            "image": "(PaaS).jpeg"
         },
         {
             "title": "Private Cloud",
             "definition": "Cloud infrastructure used exclusively by one organization.",
             "example": "A university uses its own cloud to store academic data.",
-            "image": "nube_privada.png"
+            "image": "Private Cloud.jpeg"
         },
         {
             "title": "Public Cloud",
             "definition": "Cloud services provided by third-party vendors to the general public.",
             "example": "Google Cloud, AWS, or Microsoft Azure.",
-            "image": "nube_publica.png"
+            "image": "Public Cloud.jpeg"
         },
         {
             "title": "Virtualization",
             "definition": "Creating virtual versions of physical resources like servers or operating systems.",
             "example": "Running multiple operating systems on a single physical machine.",
-            "image": "virtualizacion.png"
+            "image": "Vitualizacion.jpeg"
         },
         {
             "title": "Containers",
             "definition": "Technology that packages applications and their dependencies into a single unit.",
             "example": "Docker allows creating containers to run apps anywhere.",
-            "image": "contenedor.png"
+            "image": "contenedores.png"
         },
         {
             "title": "Cloud Storage",
             "definition": "Storing files and data on the internet instead of a local computer.",
             "example": "Google Drive or Dropbox.",
-            "image": "almacenamiento_nube.png"
+            "image": "Cloud Storage.png"
         },
         {
             "title": "Microservices",
@@ -238,13 +238,13 @@
             "title": "Bandwidth",
             "definition": "The amount of data that can be transferred within a given time.",
             "example": "A higher bandwidth connection loads videos faster.",
-            "image": "ancho_banda.png"
+            "image": "anchoBanda.png"
         },
         {
             "title": "Data Center and CPU",
             "definition": "Physical facilities that house servers and processors for cloud services.",
             "example": "Amazon has data centers worldwide to provide its services.",
-            "image": "datacenter_cpu.png"
+            "image": "Data Center and CPU.png"
         }
     ]
 }
